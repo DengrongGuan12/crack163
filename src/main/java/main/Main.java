@@ -1,5 +1,8 @@
 package main;
 
+import java.io.File;
+import java.io.PrintWriter;
+import java.nio.Buffer;
 import java.util.ArrayList;
 
 /**
@@ -34,19 +37,20 @@ public class Main {
     public static void main(String[] args){
 //        System.out.println("sdfsdfgdfg");
 //        HttpRequest.sendGet("http://localhost/",null);
-        if(HttpRequest.login("https://reg.163.com/logins.jsp","syscheckcode=7d729bf70be09a8728cc8ee8bf7052a7c61faff7&username=15950570277@163.com&password=gdr@193&product=other")){
-            System.out.println("success");
-        }else{
-            System.out.println("failure");
-        }
+//        if(HttpRequest.login("https://reg.163.com/logins.jsp","syscheckcode=7d729bf70be09a8728cc8ee8bf7052a7c61faff7&username=15950570277@163.com&password=gdr@1993&product=other")){
+//            System.out.println("success");
+//        }else{
+//            System.out.println("failure");
+//        }
+//        PrintWriter printWriter = new PrintWriter(new File("sdfsdf.txt"));
 //        for(int i =0;i<62;i++){
 //            System.out.print(getChar(i));
 //        }
-//        for(int i =6;i<17;i++){
-//            Run run = new Run(i);
-//            Thread thread = new Thread(run);
-//            thread.start();
-//        }
+        for(int i =6;i<17;i++){
+            Run2 run = new Run2(i);
+            Thread thread = new Thread(run);
+            thread.start();
+        }
 
     }
 }
